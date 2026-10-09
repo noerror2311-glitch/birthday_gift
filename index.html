@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>A Little Surprise 💗</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<!-- =====================================================
+     BACKGROUND MUSIC
+===================================================== -->
+
+<audio
+    id="backgroundMusic"
+    loop
+    preload="auto"
+>
+    <source
+        src="assets/music.mp3"
+        type="audio/mpeg"
+    >
+</audio>
+
+
+
+<!-- =====================================================
+     1. FIRST LETTER
+===================================================== -->
+
+<section
+    id="letterScreen"
+    class="screen active letter-screen"
+>
+
+    <div class="floating-petal petal1">🌸</div>
+    <div class="floating-petal petal2">🌷</div>
+    <div class="floating-petal petal3">🌼</div>
+
+    <div class="letter-container">
+
+        <div
+            class="envelope"
+            id="firstLetter"
+        >
+
+            <div class="envelope-flap"></div>
+
+            <div class="envelope-body">
+
+                <div class="letter-seal">
+                    💗
+                </div>
+
+                <p class="envelope-text">
+                    A little something<br>
+                    for you...
+                </p>
+
+            </div>
+
+        </div>
+
+        <p class="click-hint">
+            click the letter
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     2. LOADING
+===================================================== -->
+
+<section
+    id="loadingScreen"
+    class="screen loading-screen"
+>
+
+    <div class="flower-loader">
+
+        <div class="flower-center">
+            🌼
+        </div>
+
+        <div class="petal p1">🌸</div>
+        <div class="petal p2">🌸</div>
+        <div class="petal p3">🌸</div>
+        <div class="petal p4">🌸</div>
+        <div class="petal p5">🌸</div>
+        <div class="petal p6">🌸</div>
+
+    </div>
+
+    <p class="loading-text">
+        just a little moment...
+    </p>
+
+</section>
+
+
+
+<!-- =====================================================
+     3. PASSWORD
+===================================================== -->
+
+<section
+    id="passwordScreen"
+    class="screen password-screen"
+>
+
+    <div class="cloud cloud1"></div>
+    <div class="cloud cloud2"></div>
+    <div class="cloud cloud3"></div>
+    <div class="cloud cloud4"></div>
+
+    <div class="password-wrapper">
+
+        <div class="lock-icon">
+            🔐
+        </div>
+
+        <h1>
+            A tiny secret
+        </h1>
+
+        <p class="password-subtitle">
+            enter the little code
+        </p>
+
+        <div
+            id="passwordDots"
+            class="password-dots"
+        >
+
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </div>
+
+        <p
+            id="passwordMessage"
+            class="password-message"
+        ></p>
+
+        <div class="dialpad">
+
+            <button data-number="1">1</button>
+            <button data-number="2">2</button>
+            <button data-number="3">3</button>
+
+            <button data-number="4">4</button>
+            <button data-number="5">5</button>
+            <button data-number="6">6</button>
+
+            <button data-number="7">7</button>
+            <button data-number="8">8</button>
+            <button data-number="9">9</button>
+
+            <button class="empty-button"></button>
+            <button data-number="0">0</button>
+
+            <button id="deleteButton">
+                ⌫
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     4. FLOWER TRANSITION
+===================================================== -->
+
+<section
+    id="flowerTransition"
+    class="screen flower-transition"
+>
+
+    <canvas id="flowerCanvas"></canvas>
+
+</section>
+
+
+
+<!-- =====================================================
+     5. SMALL BIRTHDAY MESSAGE
+===================================================== -->
+
+<section
+    id="birthdayScreen"
+    class="screen message-screen birthday-screen"
+>
+
+    <div class="message-card birthday-card">
+
+        <div class="message-icon">
+            🎂
+        </div>
+
+        <h1>
+            Happy Birthday! 🎀
+        </h1>
+
+        <p>
+            Today is your special day,
+            and I wanted to make a little
+            corner of the internet just for you. ♡
+        </p>
+
+        <p>
+            So take your time,
+            enjoy every little surprise
+            and keep going...
+            there's more waiting for you. 🌸
+        </p>
+
+        <button
+            class="continue-button"
+            id="birthdayContinue"
+        >
+            Continue...
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     6. HEARTFELT MESSAGE
+===================================================== -->
+
+<section
+    id="heartfeltScreen"
+    class="screen message-screen heartfelt-screen"
+>
+
+    <div class="message-card heartfelt-card">
+
+        <div class="message-icon">
+            💌
+        </div>
+
+        <h1>
+            A little something from my heart
+        </h1>
+
+        <div class="heartfelt-text">
+
+            <p>
+                Another year older🥹, but here is the truth😊,
+                you still have my heart❤️, and your wonderful youth😊.
+                You're my favourite hello and my hardest goodbye💋,
+                the one who can always bring light to my sky💌🥹.
+            </p>
+
+            <p>
+                From your laugh to the way that you smile🥹🎀,
+                you make every single day totally worthwhile💌.
+                You’re my anchor😊, my comfort❤️‍🔥, my happiest place🤍,
+                and my favourite view is the look on your face🥹💌.
+            </p>
+
+            <p>
+                So make a big wish when you blow out the flame🥹,
+                I’ll be right by your side🥹, quietly cheering your name😘😊.
+                Happy birthday, my love❤️, my whole world🤍,
+                here’s to a beautiful story that never will end🎀🧿💞.
+            </p>
+
+        </div>
+
+        <button
+            class="continue-button"
+            id="heartfeltContinue"
+        >
+            Continue...
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     7. SIX PHOTOS
+===================================================== -->
+
+<section
+    id="photoScreen"
+    class="screen photo-screen"
+>
+
+    <div class="section-heading">
+
+        <span>✦</span>
+
+        <h1>
+            Just Some Pics of yours
+        </h1>
+
+        <p>
+            which made my heart flatter....
+        </p>
+
+    </div>
+
+
+    <!-- SIX PHOTOS -->
+
+    <div class="photo-grid six-photos">
+
+
+        <!-- PHOTO 1 -->
+
+        <div class="photo-memory">
+
+            <div class="photo-card">
+
+                <img
+                    src="assets/photo1.jpg"
+                    alt="Photo 1"
+                >
+
+            </div>
+
+            <p class="photo-caption">
+                so cute😘🧿
+            </p>
+
+        </div>
+
+
+
+        <!-- PHOTO 2 -->
+
+        <div class="photo-memory">
+
+            <div class="photo-card">
+
+                <img
+                    src="assets/photo2.jpg"
+                    alt="Photo 2"
+                >
+
+            </div>
+
+            <p class="photo-caption">
+                my favourite❤️💋
+            </p>
+
+        </div>
+
+
+
+        <!-- PHOTO 3 -->
+
+        <div class="photo-memory">
+
+            <div class="photo-card">
+
+                <img
+                    src="assets/photo3.jpg"
+                    alt="Photo 3"
+                >
+
+            </div>
+
+            <p class="photo-caption">
+                a happy memory💌🤍
+            </p>
+
+        </div>
+
+
+
+        <!-- PHOTO 4 -->
+
+        <div class="photo-memory">
+
+            <div class="photo-card">
+
+                <img
+                    src="assets/photo4.jpg"
+                    alt="Photo 4"
+                >
+
+            </div>
+
+            <p class="photo-caption">
+                always smiling❤️🧿
+            </p>
+
+        </div>
+
+
+
+        <!-- PHOTO 5 -->
+
+        <div class="photo-memory">
+
+            <div class="photo-card">
+
+                <img
+                    src="assets/photo5.jpg"
+                    alt="Photo 5"
+                >
+
+            </div>
+
+            <p class="photo-caption">
+                pure joy💞💌
+            </p>
+
+        </div>
+
+
+
+        <!-- PHOTO 6 -->
+
+        <div class="photo-memory">
+
+            <div class="photo-card">
+
+                <img
+                    src="assets/photo6.jpg"
+                    alt="Photo 6"
+                >
+
+            </div>
+
+            <p class="photo-caption">
+                cuteness overload🤍🥹🎀
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- =================================================
+         MESSAGE BELOW ALL PHOTOS
+    ================================================= -->
+
+    <div class="photos-bottom-message">
+
+        <p>
+            Every picture here holds a little piece of you —
+            the smile, the laugh, the quiet moments in between.
+            I hope that whenever life feels heavy,
+            you remember how loved you are,
+            and that you never have to carry it all alone. 🤍
+        </p>
+
+    </div>
+
+
+    <!-- CONTINUE -->
+
+    <button
+        class="continue-button"
+        id="photoContinue"
+    >
+        Continue...
+    </button>
+
+</section>
+
+
+
+<!-- =====================================================
+     8. FOUR COLLAGES + ONE MP4 EDIT
+===================================================== -->
+
+<section
+    id="editScreen"
+    class="screen edit-screen"
+>
+
+    <div class="section-heading">
+
+        <span>✦</span>
+
+        <h1>
+            a few more surprises
+        </h1>
+
+        <p>
+            little pieces of memories...
+        </p>
+
+    </div>
+
+
+    <div class="edit-grid">
+
+
+        <!-- COLLAGE 1 -->
+
+        <div class="edit-card">
+
+            <img
+                src="assets/collage1.jpg"
+                alt="Collage 1"
+            >
+
+        </div>
+
+
+
+        <!-- COLLAGE 2 -->
+
+        <div class="edit-card">
+
+            <img
+                src="assets/collage2.jpg"
+                alt="Collage 2"
+            >
+
+        </div>
+
+
+
+        <!-- COLLAGE 3 -->
+
+        <div class="edit-card">
+
+            <img
+                src="assets/collage3.jpg"
+                alt="Collage 3"
+            >
+
+        </div>
+
+
+
+        <!-- COLLAGE 4 -->
+
+        <div class="edit-card">
+
+            <img
+                src="assets/collage4.jpg"
+                alt="Collage 4"
+            >
+
+        </div>
+
+
+
+        <!-- MP4 EDIT -->
+
+        <div class="edit-card video-edit-card">
+
+            <video
+                controls
+                playsinline
+                preload="metadata"
+            >
+
+                <source
+                    src="assets/edit.mp4"
+                    type="video/mp4"
+                >
+
+                Your browser does not support video.
+
+            </video>
+
+        </div>
+
+
+    </div>
+
+
+    <button
+        class="continue-button"
+        id="editContinue"
+    >
+        Continue...
+    </button>
+
+</section>
+
+
+
+<!-- =====================================================
+     9. VOICE LOADING
+===================================================== -->
+
+<section
+    id="voiceLoading"
+    class="screen loading-screen"
+>
+
+    <div class="flower-loader">
+
+        <div class="flower-center">
+            🌷
+        </div>
+
+        <div class="petal p1">🌸</div>
+        <div class="petal p2">🌸</div>
+        <div class="petal p3">🌸</div>
+        <div class="petal p4">🌸</div>
+        <div class="petal p5">🌸</div>
+        <div class="petal p6">🌸</div>
+
+    </div>
+
+    <p class="loading-text">
+        one more little thing...
+    </p>
+
+</section>
+
+
+
+<!-- =====================================================
+     10. VOICE NOTE
+===================================================== -->
+
+<section
+    id="voiceScreen"
+    class="screen voice-screen"
+>
+
+    <div class="hearts">
+
+        <span>♡</span>
+        <span>♥</span>
+        <span>♡</span>
+        <span>♥</span>
+        <span>♡</span>
+        <span>♥</span>
+        <span>♡</span>
+        <span>♥</span>
+        <span>♡</span>
+        <span>♥</span>
+
+    </div>
+
+
+    <div class="voice-content">
+
+        <div class="voice-title">
+
+            <span>
+                🎀
+            </span>
+
+            <h1>
+                A Little Message
+            </h1>
+
+            <p>
+                listen whenever you're ready...
+            </p>
+
+        </div>
+
+
+        <div class="voice-player">
+
+            <button
+                id="playButton"
+                class="play-button"
+            >
+                ▶
+            </button>
+
+
+            <div class="audio-middle">
+
+                <div class="waveform">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </div>
+
+
+                <input
+                    id="audioProgress"
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="0"
+                >
+
+            </div>
+
+
+            <div class="audio-time">
+
+                <span id="currentTime">
+                    0:00
+                </span>
+
+                <span>/</span>
+
+                <span id="totalTime">
+                    0:00
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <audio id="voiceAudio">
+
+            <source
+                src="assets/voice.mp3"
+                type="audio/mpeg"
+            >
+
+        </audio>
+
+
+        <p
+            id="voiceStatus"
+            class="voice-status"
+        >
+            press play ♡
+        </p>
+
+
+        <button
+            id="voiceContinue"
+            class="continue-button hidden"
+        >
+            Continue...
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     11. POEM LOADING
+===================================================== -->
+
+<section
+    id="poemLoading"
+    class="screen loading-screen"
+>
+
+    <div class="flower-loader">
+
+        <div class="flower-center">
+            🌺
+        </div>
+
+        <div class="petal p1">🌸</div>
+        <div class="petal p2">🌸</div>
+        <div class="petal p3">🌸</div>
+        <div class="petal p4">🌸</div>
+        <div class="petal p5">🌸</div>
+        <div class="petal p6">🌸</div>
+
+    </div>
+
+    <p class="loading-text">
+        almost there...
+    </p>
+
+</section>
+
+
+
+<!-- =====================================================
+     12. POEM
+===================================================== -->
+
+<section
+    id="poemScreen"
+    class="screen poem-screen"
+>
+
+    <div class="poem-background-flower flower-a">
+        🌸
+    </div>
+
+    <div class="poem-background-flower flower-b">
+        🌷
+    </div>
+
+
+    <div class="poem-paper">
+
+        <div class="poem-decoration">
+            ✦
+        </div>
+
+
+        <h1>
+            Just Something I only can Do
+        </h1>
+
+
+        <div class="poem-text">
+
+            <p>
+                I really care for you❤️, more than words can say🥹,<br>
+                and I think of you in every part of the day🥹🤍.<br>
+                Even when life gets loud and the little worries start,<br>
+                you’re always there, close to my heart😘❤️‍🔥💞.
+            </p>
+
+
+            <p>
+                I dream of the days when we can pack up and roam🧿😘,<br>
+                to wander the world, then find our way home💌💋.<br>
+                Side by side, with nowhere to be,<br>
+                just you, and me, and a view of the sea🥹🎀🧿.
+            </p>
+
+
+            <p>
+                I still remember the little things🥹🎀,<br>
+                the laughs, the walks, and the joy that they bring❤️‍🔥💞.<br>
+                And of all the moments that mean the most to me,<br>
+                it’s simply being with you — that’s where I love to be💋🎀🧿❤️.
+            </p>
+
+        </div>
+
+
+        <div class="poem-decoration bottom">
+            ✦
+        </div>
+
+
+        <button
+            class="continue-button"
+            id="poemContinue"
+        >
+            Continue...
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     13. FINAL LETTER
+===================================================== -->
+
+<section
+    id="finalLetterScreen"
+    class="screen final-letter-screen"
+>
+
+    <div class="final-letter-card">
+
+        <div class="message-icon">
+            ✉️
+        </div>
+
+
+        <h1>
+            One last little letter...
+        </h1>
+
+
+        <div class="letter-draft">
+
+            <p>
+                Hi you 🤍
+            </p>
+
+            <p>
+                I'm not great with words, so I hope this does them justice.
+                Thank you for being in my life. Thank you for the laughs,
+                the support, the patience, and all the little moments
+                that made ordinary days feel special. 🥹
+            </p>
+
+            <p>
+                We've been through good times and tough ones,
+                and through all of it, you've stayed kind, real and
+                wonderfully you. I'm so grateful for that.
+                I hope you always know how much you matter.
+            </p>
+
+            <p>
+                On your birthday and every day after it,
+                I wish you happiness, good health, peace of mind
+                and everything your heart is hoping for.
+                And whenever you feel low or tired,
+                remember that you're never alone — I'm always here. 🎀🧿
+            </p>
+
+            <p>
+                Happy Birthday 💋💌
+            </p>
+
+        </div>
+
+        <button
+            class="continue-button"
+            id="letterContinue"
+        >
+            Continue...
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     14. FINAL VIDEO
+===================================================== -->
+
+<section
+    id="finalVideoScreen"
+    class="screen final-video-screen"
+>
+
+    <div class="final-video-content">
+
+        <div class="final-video-heading">
+
+            <span>
+                🎀
+            </span>
+
+            <h1>
+                And finally...
+            </h1>
+
+            <p>
+                one last little surprise for you ♡
+            </p>
+
+        </div>
+
+
+        <div class="final-video-wrapper">
+
+            <video
+                id="finalVideo"
+                controls
+                playsinline
+                preload="metadata"
+            >
+
+                <source
+                    src="assets/final-video.mp4"
+                    type="video/mp4"
+                >
+
+                Your browser does not support video.
+
+            </video>
+
+        </div>
+
+
+        <p class="final-message">
+            Happy Birthday! 🎂💗
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
